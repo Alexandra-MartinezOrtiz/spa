@@ -1,0 +1,377 @@
+/* Fuentes y textos */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Romanesco&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFEFDF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: 'Romanesco', cursive;
+    color: #000;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+}
+
+p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+}
+
+h3 {        
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+h4{
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    text-transform: uppercase; 
+    color: #000;
+}
+
+/* Estilos de botones */
+button {
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 35px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-reservar,
+.btn-condiciones {
+    background-color: #A3A656;
+    color: #fff;
+}
+
+.btn-reservar:hover,
+.btn-condiciones:hover {
+    background-color: #384001;
+}
+
+/* Menú */
+nav {
+    background-color: #A3A656;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #FFFF00;
+}
+
+.user-section {
+    display:inline-flex;
+    align-items: center;
+}
+
+.user-section img {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+}
+
+.spacer {
+margin-right: 30px; 
+}
+
+.flag-section img {
+    width: 45px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+.busqueda-section img {
+
+    width: 10px;
+    height: 10px;
+    margin-left: 0px;
+    
+}   
+
+/* Sección principal */
+.main-content {
+    text-align: left;
+    padding: 190px;
+    background-image: url('material_tarea/images/main.png'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    color: #000;
+}
+
+.main-content h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content p {
+    margin: 20px 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* Formulario de reserva */
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #F2F6F6;
+    height: 100px;
+}
+
+.reservation-form div {
+    display: flex;
+    align-items: center;
+}
+
+.reservation-form label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.reservation-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    width: 200px;
+}
+
+.reservation-form input::placeholder {
+    color: #9E9A9A; /* Color del texto placeholder */
+    font-style:regular;
+    font-size: 16px; /* Estilo del texto placeholder */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sección de servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 70px;
+    background-color: #FFEFDF;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 15px 15px 0 0; /* Curva bordes: 15px 15px 0 0 */
+    overflow: hidden;
+    width: 300px;
+    /*text-align:left;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card h3 {
+    background-color: #A3A656;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align:center;
+    
+}
+
+.service-card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    text-align:left;
+}
+
+.service-card .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 0;
+    justify-content: space-between;
+}
+
+.service-card button {
+    margin-bottom: 35px;
+    
+}
+
+/* Sección de membresías */
+.memberships {
+    padding: 5px 100px;
+    background-color: #F2F6F6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /*gap: 150px;*/
+    flex-wrap: wrap;
+
+}
+
+.memberships h2 {
+    font-size: 32px;
+    /*margin-bottom: 50px;*/
+    width: 100%;
+    flex-direction: column;
+    
+
+}
+
+.membership-card {
+    display: inline-block;
+    width: 255px;
+    text-align: center;
+    margin: 20px;
+   
+}
+
+.circle-container {
+    width: 255px; 
+    height: 255px; 
+    border-radius: 50%; 
+    overflow:initial;
+    border: 10px solid #384001; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle-container img {
+    max-width: 50%;
+    max-height: 50%;
+    width: 233px; 
+    height: 233px; 
+
+    
+    
+    
+}
+
+
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px; /* Añade espacio entre las opciones de membresía */
+}
+
+.membership-card img {
+    width: 255px;
+    height: 255px;
+    object-fit: cover;
+   
+}
+
+.membership-card h3 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.membership-card button {
+    margin: 10px 0;
+}
+
+.membership-card ul {
+    list-style-type: disc;
+    padding: 10px 30px;
+    margin: 10px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+/* Pie de página */
+footer {
+    background-color: #384001;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #DAD3B3;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #FFFF00;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons span {
+    margin-right: 15px;
+    color: #DAD3B3;
+    font-size: 14px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+#codigo::placeholder {
+    text-transform: none; /* Desactiva la transformación de texto */
+}
