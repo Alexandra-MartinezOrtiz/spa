@@ -184,23 +184,29 @@ nav ul li a:hover {
 }
 
 /* Sección de servicios */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Añadir espacio entre elementos */
+}
+
 .service-card {
     background-color: #fff;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    width: 300px;
+    width: 100%; /* Cambiado a 100% */
+    max-width: 300px; /* Máximo ancho */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 50px;
+    margin-top: 20px; /* Ajuste de margen */
 }
 
 .service-card img {
     width: 100%;
-    height: 134px;
+    height: auto; /* Ajuste de altura */
     object-fit: cover;
 }
 
@@ -209,11 +215,10 @@ nav ul li a:hover {
     color: #fff;
     margin: 0;
     padding: 10px 0;
-    font-size: 24px;
+    font-size: 1.5rem; /* Cambiado a unidades relativas */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +226,7 @@ nav ul li a:hover {
 
 .service-card p {
     padding: 10px;
-    font-size: 14px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     color: #000;
     text-align: center;
     flex-grow: 1;
@@ -235,7 +240,7 @@ nav ul li a:hover {
 }
 
 .service-card .price {
-    font-size: 24px;
+    font-size: 1.5rem; /* Cambiado a unidades relativas */
     font-weight: bold;
     margin: 0;
 }
@@ -243,7 +248,7 @@ nav ul li a:hover {
 .service-card button {
     margin: 0;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     font-weight: 400;
     border-radius: 35px;
     border: none;
@@ -384,74 +389,124 @@ footer ul li a:hover {
 }
 
 #codigo::placeholder {
-    text-transform: none;
+    text-transform: none; /* Desactiva la transformación de texto */
 }
-
 /* Media Queries */
-@media (max-width: 1200px) {
-    .main-content {
-        padding: 100px;
+@media (min-width: 300px) {
+    .reservation-form {
+        flex-direction: row;
+    }
+
+    .reservation-form div {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    footer ul {
+        flex-direction: row;
     }
 }
 
-@media (max-width: 768px) {
-    nav {
-        padding: 0 30px;
-    }
+@media (min-width: 768px) {
     .main-content {
-        padding: 50px;
+        padding: 10%;
     }
+
+    .services {
+        flex-wrap: nowrap;
+    }
+
+    .memberships {
+        flex-direction: row;
+    }
+
+    .membership-card {
+        max-width: 300px;
+    }
+
+    .circle-container {
+        max-width: 300px;
+    }
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px; /* Ajuste de padding */
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
     .reservation-form {
         flex-direction: column;
-        padding: 0 20px;
+        padding: 10px;
         height: auto;
     }
+
+    .reservation-form div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
     .service-card {
         width: 100%;
         margin: 20px 0;
     }
+
     .memberships {
-        padding: 5px 20px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .membership-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
     }
 }
 
-@media (max-width: 576px) {
-    nav ul li {
-        margin-right: 10px;
-    }
-    nav ul li a {
-        font-size: 12px;
-    }
-    .user-section img {
-        width: 25px;
-        height: 25px;
-    }
-    .main-content {
-        padding: 20px;
-    }
-    .main-content h1 {
-        font-size: 48px;
-    }
-    .main-content p {
-        font-size: 16px;
-    }
-    .service-card {
-        margin: 10px 0;
-    }
-    .memberships h2 {
-        font-size: 24px;
-    }
-    .membership-card {
-        width: 100%;
-    }
-    .circle-container {
-        width: 100%;
-        height: auto;
-        border: none;
-        box-shadow: none;
-    }
-    .circle-container img {
-        max-width: 80%;
-        max-height: 80%;
-    }
-}
+
+
+
