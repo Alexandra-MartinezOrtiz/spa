@@ -12,42 +12,41 @@ body {
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 2.5rem; /* Cambiado a unidades relativas */
     font-family: 'Romanesco', cursive;
     color: #000;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2rem; /* Cambiado a unidades relativas */
     font-weight: 600;
     color: #000;
 }
 
 p {
-    font-size: 32px;
+    font-size: 1.25rem; /* Cambiado a unidades relativas */
     font-weight: 600;
     color: #000;
 }
 
 h3 {        
-    font-size: 14px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     font-weight: 600;
     color: #000;
     font-family: 'Inter', sans-serif;
 }
 
 h4{
-
     font-family: 'Inter', sans-serif;
     font-weight: 400; 
-    font-size: 16px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     text-transform: uppercase; 
     color: #000;
 }
 
 /* Estilos de botones */
 button {
-    font-size: 16px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     font-weight: 400;
     border-radius: 35px;
     padding: 10px 20px;
@@ -69,7 +68,7 @@ button {
 /* Menú */
 nav {
     background-color: #A3A656;
-    padding: 0px 70px;
+    padding: 10px 20px; /* Ajuste de padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,13 +83,13 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 10px; /* Ajuste de margen */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
 }
 
 nav ul li a:hover {
@@ -98,7 +97,7 @@ nav ul li a:hover {
 }
 
 .user-section {
-    display:inline-flex;
+    display: flex; /* Cambiado de inline-flex a flex */
     align-items: center;
 }
 
@@ -109,7 +108,7 @@ nav ul li a:hover {
 }
 
 .spacer {
-margin-right: 30px; 
+    margin-right: 15px; /* Ajuste de margen */
 }
 
 .flag-section img {
@@ -119,17 +118,15 @@ margin-right: 30px;
 }
 
 .busqueda-section img {
-
     width: 10px;
     height: 10px;
     margin-left: 0px;
-    
-}   
+}
 
 /* Sección principal */
 .main-content {
     text-align: left;
-    padding: 190px;
+    padding: 10%; /* Ajuste de padding */
     background-image: url('material_tarea/images/main.png'); /* Ruta de la imagen de fondo */
     background-size: cover;
     background-position: center;
@@ -147,65 +144,70 @@ margin-right: 30px;
     margin: 20px 0 0;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.25rem; /* Cambiado a unidades relativas */
 }
 
 /* Formulario de reserva */
 .reservation-form {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Cambiado de row a column */
     align-items: center;
-    padding: 0 100px;
+    padding: 0 20px; /* Ajuste de padding */
     background-color: #F2F6F6;
-    height: 100px;
+    height: auto; /* Cambiado de 100px a auto */
+    gap: 10px; /* Añadir espacio entre elementos */
 }
 
 .reservation-form div {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Cambiado de row a column */
+    align-items: flex-start; /* Alineación de inicio */
 }
 
 .reservation-form label {
-    margin-right: 10px;
-    font-size: 16px;
+    margin-bottom: 5px; /* Ajuste de margen */
+    font-size: 1rem; /* Cambiado a unidades relativas */
     color: #000;
-    margin-bottom: 5px;
 }
 
 .reservation-form input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 35px;
-    width: 200px;
+    width: 100%; /* Ajuste de ancho */
 }
 
 .reservation-form input::placeholder {
     color: #9E9A9A; /* Color del texto placeholder */
-    font-style:regular;
-    font-size: 16px; /* Estilo del texto placeholder */
+    font-style: regular;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     font-family: 'Inter', sans-serif;
 }
 
 /* Sección de servicios */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Añadir espacio entre elementos */
+}
+
 .service-card {
     background-color: #fff;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    width: 300px;
+    width: 100%; /* Cambiado a 100% */
+    max-width: 300px; /* Máximo ancho */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 50px;
-    
-    
+    margin-top: 20px; /* Ajuste de margen */
 }
 
 .service-card img {
     width: 100%;
-    height: 134px;
+    height: auto; /* Ajuste de altura */
     object-fit: cover;
 }
 
@@ -214,11 +216,10 @@ margin-right: 30px;
     color: #fff;
     margin: 0;
     padding: 10px 0;
-    font-size: 24px;
+    font-size: 1.5rem; /* Cambiado a unidades relativas */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,7 +227,7 @@ margin-right: 30px;
 
 .service-card p {
     padding: 10px;
-    font-size: 14px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     color: #000;
     text-align: center;
     flex-grow: 1;
@@ -240,7 +241,7 @@ margin-right: 30px;
 }
 
 .service-card .price {
-    font-size: 24px;
+    font-size: 1.5rem; /* Cambiado a unidades relativas */
     font-weight: bold;
     margin: 0;
 }
@@ -248,7 +249,7 @@ margin-right: 30px;
 .service-card button {
     margin: 0;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
     font-weight: 400;
     border-radius: 35px;
     border: none;
@@ -261,85 +262,58 @@ margin-right: 30px;
     background-color: #384001;
 }
 
-.column {
-    display: inline-block;
-    width: 200px;
-    margin: 0 130px 30px; /* Agregando un margen inferior de 20px */
-}
-
-
-
 /* Sección de membresías */
 .memberships {
-    padding: 5px 100px;
+    padding: 10px 20px; /* Ajuste de padding */
     background-color: #F2F6F6;
     text-align: center;
     display: flex;
-    justify-content: center;
-    /*gap: 150px;*/
-    flex-wrap: wrap;
-
+    flex-direction: column; /* Cambiado a columna */
+    align-items: center;
+    gap: 20px; /* Añadir espacio entre elementos */
 }
 
 .memberships h2 {
-    font-size: 32px;
-    /*margin-bottom: 50px;*/
-    width: 100%;
-    flex-direction: column;
-    
-
+    font-size: 2rem; /* Cambiado a unidades relativas */
+    margin-bottom: 20px; /* Ajuste de margen */
 }
 
 .membership-card {
-    display: inline-block;
-    width: 255px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%; /* Cambiado a 100% */
+    max-width: 255px; /* Máximo ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 20px;
-   
+    margin-top: 20px; /* Ajuste de margen */
 }
 
 .circle-container {
-    width: 255px; 
-    height: 255px; 
-    border-radius: 50%; 
-    overflow:initial;
-    border: 10px solid #384001; 
-    box-sizing: border-box; 
+    width: 100%; /* Cambiado a 100% */
+    max-width: 255px; /* Máximo ancho */
+    aspect-ratio: 1; /* Mantener proporción */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #384001;
     display: flex;
-    justify-content:center;
-    align-items:center;
-    background-color:#fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .circle-container img {
-    max-width: 50%;
-    max-height: 50%;
-    width: 233px; 
-    height: 233px; 
-
-    
-    
-    
-}
-
-
-.membership-options {
-    display: flex;
-    justify-content: space-around;
-    gap: 100px; /* Añade espacio entre las opciones de membresía */
-}
-
-.membership-card img {
-    width: 255px;
-    height: 255px;
-    object-fit: cover;
-   
+    width: 100%; /* Ajuste de ancho */
+    height: auto; /* Ajuste de altura */
 }
 
 .membership-card h3 {
     margin: 20px 0;
-    font-size: 24px;
+    font-size: 1.5rem; /* Cambiado a unidades relativas */
 }
 
 .membership-card button {
@@ -351,16 +325,16 @@ margin-right: 30px;
     padding: 10px 30px;
     margin: 10px 0;
     text-align: left;
-    display: inline-block;
 }
 
 /* Pie de página */
 footer {
     background-color: #384001;
-    padding: 10px 70px;
+    padding: 10px 20px; /* Ajuste de padding */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Cambiado a columna */
     align-items: center;
+    gap: 10px; /* Añadir espacio entre elementos */
 }
 
 footer ul {
@@ -368,17 +342,18 @@ footer ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column; /* Cambiado a columna */
     align-items: center;
 }
 
 footer ul li {
-    margin-right: 20px;
+    margin: 5px 0; /* Ajuste de margen */
 }
 
 footer ul li a {
     text-decoration: none;
     color: #DAD3B3;
-    font-size: 16px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
 }
 
 footer ul li a:hover {
@@ -388,20 +363,57 @@ footer ul li a:hover {
 .social-icons {
     display: flex;
     align-items: center;
+    gap: 10px; /* Añadir espacio entre elementos */
 }
 
 .social-icons span {
-    margin-right: 15px;
+    margin-right: 10px; /* Ajuste de margen */
     color: #DAD3B3;
-    font-size: 14px;
+    font-size: 1rem; /* Cambiado a unidades relativas */
 }
 
 .social-icons img {
     width: 24px;
     height: 24px;
-    margin-left: 15px;
 }
 
-#codigo::placeholder {
-    text-transform: none; /* Desactiva la transformación de texto */
+/* Media Queries */
+@media (min-width: 600px) {
+    .reservation-form {
+        flex-direction: row;
+    }
+
+    .reservation-form div {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    footer ul {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        padding: 10%;
+    }
+
+    .services {
+        flex-wrap: nowrap;
+    }
+
+    .memberships {
+        flex-direction: row;
+    }
+
+    .membership-card {
+        max-width: 300px;
+    }
+
+    .circle-container {
+        max-width: 300px;
+    }
 }
