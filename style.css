@@ -12,41 +12,41 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem; /* Cambiado a unidades relativas */
+    font-size: 96px;
     font-family: 'Romanesco', cursive;
     color: #000;
 }
 
 h2 {
-    font-size: 2rem; /* Cambiado a unidades relativas */
+    font-size: 32px;
     font-weight: 600;
     color: #000;
 }
 
 p {
-    font-size: 1.25rem; /* Cambiado a unidades relativas */
+    font-size: 32px;
     font-weight: 600;
     color: #000;
 }
 
-h3 {        
-    font-size: 1rem; /* Cambiado a unidades relativas */
+h3 {
+    font-size: 14px;
     font-weight: 600;
     color: #000;
     font-family: 'Inter', sans-serif;
 }
 
-h4{
+h4 {
     font-family: 'Inter', sans-serif;
-    font-weight: 400; 
-    font-size: 1rem; /* Cambiado a unidades relativas */
-    text-transform: uppercase; 
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
     color: #000;
 }
 
 /* Estilos de botones */
 button {
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 16px;
     font-weight: 400;
     border-radius: 35px;
     padding: 10px 20px;
@@ -68,7 +68,7 @@ button {
 /* Menú */
 nav {
     background-color: #A3A656;
-    padding: 10px 20px; /* Ajuste de padding */
+    padding: 0px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,13 +83,13 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px; /* Ajuste de margen */
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 14px;
 }
 
 nav ul li a:hover {
@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 .user-section {
-    display: flex; /* Cambiado de inline-flex a flex */
+    display: inline-flex;
     align-items: center;
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover {
 }
 
 .spacer {
-    margin-right: 15px; /* Ajuste de margen */
+    margin-right: 30px;
 }
 
 .flag-section img {
@@ -126,8 +126,8 @@ nav ul li a:hover {
 /* Sección principal */
 .main-content {
     text-align: left;
-    padding: 10%; /* Ajuste de padding */
-    background-image: url('material_tarea/images/main.png'); /* Ruta de la imagen de fondo */
+    padding: 190px;
+    background-image: url('material_tarea/images/main.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,70 +144,63 @@ nav ul li a:hover {
     margin: 20px 0 0;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 1.25rem; /* Cambiado a unidades relativas */
+    font-size: 32px;
 }
 
 /* Formulario de reserva */
 .reservation-form {
     display: flex;
-    flex-direction: column; /* Cambiado de row a column */
+    justify-content: center;
     align-items: center;
-    padding: 0 20px; /* Ajuste de padding */
+    padding: 0 100px;
     background-color: #F2F6F6;
-    height: auto; /* Cambiado de 100px a auto */
-    gap: 10px; /* Añadir espacio entre elementos */
+    height: 100px;
 }
 
 .reservation-form div {
     display: flex;
-    flex-direction: column; /* Cambiado de row a column */
-    align-items: flex-start; /* Alineación de inicio */
+    align-items: center;
 }
 
 .reservation-form label {
-    margin-bottom: 5px; /* Ajuste de margen */
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    margin-right: 10px;
+    font-size: 16px;
     color: #000;
+    margin-bottom: 5px;
 }
 
 .reservation-form input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 35px;
-    width: 100%; /* Ajuste de ancho */
+    width: 200px;
 }
 
 .reservation-form input::placeholder {
-    color: #9E9A9A; /* Color del texto placeholder */
+    color: #9E9A9A;
     font-style: regular;
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 16px;
     font-family: 'Inter', sans-serif;
 }
 
 /* Sección de servicios */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Añadir espacio entre elementos */
-}
-
 .service-card {
     background-color: #fff;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    width: 100%; /* Cambiado a 100% */
-    max-width: 300px; /* Máximo ancho */
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 20px; /* Ajuste de margen */
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 50px;
 }
 
 .service-card img {
     width: 100%;
-    height: auto; /* Ajuste de altura */
+    height: 134px;
     object-fit: cover;
 }
 
@@ -216,10 +209,11 @@ nav ul li a:hover {
     color: #fff;
     margin: 0;
     padding: 10px 0;
-    font-size: 1.5rem; /* Cambiado a unidades relativas */
+    font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,7 +221,7 @@ nav ul li a:hover {
 
 .service-card p {
     padding: 10px;
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 14px;
     color: #000;
     text-align: center;
     flex-grow: 1;
@@ -241,7 +235,7 @@ nav ul li a:hover {
 }
 
 .service-card .price {
-    font-size: 1.5rem; /* Cambiado a unidades relativas */
+    font-size: 24px;
     font-weight: bold;
     margin: 0;
 }
@@ -249,7 +243,7 @@ nav ul li a:hover {
 .service-card button {
     margin: 0;
     padding: 10px 20px;
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 16px;
     font-weight: 400;
     border-radius: 35px;
     border: none;
@@ -262,43 +256,42 @@ nav ul li a:hover {
     background-color: #384001;
 }
 
+.column {
+    display: inline-block;
+    width: 200px;
+    margin: 0 130px 30px;
+}
+
 /* Sección de membresías */
 .memberships {
-    padding: 10px 20px; /* Ajuste de padding */
+    padding: 5px 100px;
     background-color: #F2F6F6;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Cambiado a columna */
-    align-items: center;
-    gap: 20px; /* Añadir espacio entre elementos */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .memberships h2 {
-    font-size: 2rem; /* Cambiado a unidades relativas */
-    margin-bottom: 20px; /* Ajuste de margen */
+    font-size: 32px;
+    width: 100%;
+    flex-direction: column;
 }
 
 .membership-card {
-    background-color: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    width: 100%; /* Cambiado a 100% */
-    max-width: 255px; /* Máximo ancho */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    width: 255px;
     text-align: center;
-    margin-top: 20px; /* Ajuste de margen */
+    margin: 20px;
 }
 
 .circle-container {
-    width: 100%; /* Cambiado a 100% */
-    max-width: 255px; /* Máximo ancho */
-    aspect-ratio: 1; /* Mantener proporción */
+    width: 255px;
+    height: 255px;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: initial;
     border: 10px solid #384001;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,13 +300,27 @@ nav ul li a:hover {
 }
 
 .circle-container img {
-    width: 100%; /* Ajuste de ancho */
-    height: auto; /* Ajuste de altura */
+    max-width: 50%;
+    max-height: 50%;
+    width: 233px;
+    height: 233px;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.membership-card img {
+    width: 255px;
+    height: 255px;
+    object-fit: cover;
 }
 
 .membership-card h3 {
     margin: 20px 0;
-    font-size: 1.5rem; /* Cambiado a unidades relativas */
+    font-size: 24px;
 }
 
 .membership-card button {
@@ -325,16 +332,16 @@ nav ul li a:hover {
     padding: 10px 30px;
     margin: 10px 0;
     text-align: left;
+    display: inline-block;
 }
 
 /* Pie de página */
 footer {
     background-color: #384001;
-    padding: 10px 20px; /* Ajuste de padding */
+    padding: 10px 70px;
     display: flex;
-    flex-direction: column; /* Cambiado a columna */
+    justify-content: space-between;
     align-items: center;
-    gap: 10px; /* Añadir espacio entre elementos */
 }
 
 footer ul {
@@ -342,18 +349,17 @@ footer ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Cambiado a columna */
     align-items: center;
 }
 
 footer ul li {
-    margin: 5px 0; /* Ajuste de margen */
+    margin-right: 20px;
 }
 
 footer ul li a {
     text-decoration: none;
     color: #DAD3B3;
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 16px;
 }
 
 footer ul li a:hover {
@@ -363,57 +369,89 @@ footer ul li a:hover {
 .social-icons {
     display: flex;
     align-items: center;
-    gap: 10px; /* Añadir espacio entre elementos */
 }
 
 .social-icons span {
-    margin-right: 10px; /* Ajuste de margen */
+    margin-right: 15px;
     color: #DAD3B3;
-    font-size: 1rem; /* Cambiado a unidades relativas */
+    font-size: 14px;
 }
 
 .social-icons img {
     width: 24px;
     height: 24px;
+    margin-left: 15px;
+}
+
+#codigo::placeholder {
+    text-transform: none;
 }
 
 /* Media Queries */
-@media (min-width: 600px) {
-    .reservation-form {
-        flex-direction: row;
-    }
-
-    .reservation-form div {
-        flex-direction: row;
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-
-    footer ul {
-        flex-direction: row;
+@media (max-width: 1200px) {
+    .main-content {
+        padding: 100px;
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    nav {
+        padding: 0 30px;
+    }
     .main-content {
-        padding: 10%;
+        padding: 50px;
     }
-
-    .services {
-        flex-wrap: nowrap;
+    .reservation-form {
+        flex-direction: column;
+        padding: 0 20px;
+        height: auto;
     }
-
+    .service-card {
+        width: 100%;
+        margin: 20px 0;
+    }
     .memberships {
-        flex-direction: row;
+        padding: 5px 20px;
     }
+}
 
+@media (max-width: 576px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+    .user-section img {
+        width: 25px;
+        height: 25px;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .main-content h1 {
+        font-size: 48px;
+    }
+    .main-content p {
+        font-size: 16px;
+    }
+    .service-card {
+        margin: 10px 0;
+    }
+    .memberships h2 {
+        font-size: 24px;
+    }
     .membership-card {
-        max-width: 300px;
+        width: 100%;
     }
-
     .circle-container {
-        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border: none;
+        box-shadow: none;
+    }
+    .circle-container img {
+        max-width: 80%;
+        max-height: 80%;
     }
 }
